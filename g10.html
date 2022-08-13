@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>                 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+     <!-- CSS link only -->
+     
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous"/>
+       
+                                                                         
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+         
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.bundle.min.css"
+          rel="stylesheet" 
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+           crossorigin="anonymous">
+
+           <link rel="stylesheet" href="css/mdb.min.css"       >   
+           
+
+
+         <link rel="stylesheet" href="g10/css/style.css">      
+    <title>My CV</title>
+</head>
+<body>
+
+<div class="container1">
+    
+        <div class="nav navSection" >
+            <div class= "navTitle" > 
+               <img src="g10/img/cv2.PNG" alt="">
+            </div>
+            <div class=" ">
+              <nav class="navbar navbar-expand-sm navbar-light ">
+                
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav" id="navbar" >
+                    <a class="nav-item nav-link active" href="#"  onclick="fAbout()">About Me </a>
+                    <a class="nav-item nav-link "  href="#" onclick="fEducation()">Education</a>
+                    <a class="nav-item nav-link"  href="#"  onclick="fProjects()">Projects</a>
+
+                    <a class="nav-item nav-link"  href="#"  onclick="fKnowledge()">Knowledge</a>
+                    
+                    <a class="nav-item nav-link" href="#"  onclick="fLanguage()">Language</a>
+                    <a class="nav-item nav-link" href="#"  onclick="fInterest()">interest</a>
+
+                    
+                  </div>
+                </div>
+              </nav>
+            </div>
+        </div>
+   
+    <div class="row">
+        <div class="content" >
+            <div class="" >
+              
+              <div class=" myPic"   >
+               <img src="g10/img/personal-icon2.jpg" alt="" onmouseover="f1()" onmouseleave="f2()" id="myPic">
+              </div>
+              
+              <div class=" myContact" >
+                <p id="phone" onmouseover="f3(this)" onmouseleave="f4(this)"><span class="iconify contactIcon" data-icon="emojione-monotone:mobile-phone" data-flip="horizontal"></span><span class="bold">Phone:</span> 0933445566</p>
+                <p id="email" onmouseover="f3(this)" onmouseleave="f4(this)"><i class="fa  fa-at contactIcon"></i><span class="bold">Email:</span>Sebagh@gmail.com</p>
+                <p id="face" onmouseover="f3(this)" onmouseleave="f4(this)"><i class="fa  fa-facebook-square contactIcon"></i><span class="bold">Facebook:</span>facebook.com/sseba.gh</p>
+                <p id="insta" onmouseover="f3(this)" onmouseleave="f4(this)"><i class="fa  fa-instagram contactIcon"></i><span class="bold">Instagram:</span>instagram.com/sseba_g</p>
+                
+              </div>
+              
+            
+            </div>
+            <div class="col-md-6 col-12  "  >
+             <div class="mainDiv " id="about" style="visibility: visible;">
+              <div class="mainDivTitle">
+                <h1><span class="letter">A</span>bout <span class="letter">M</span>e</h1>
+               </div>
+               <div class="mainDivContent">
+                <p><span class="bold px-3">Name:</span><span class="mainDivTitle">Seba Ghneem</span></p>
+                <p><span class="bold px-3">Full Arabic Name:</span><span class="mainDivTitle">صبا غنيم</span></p>
+                <p><span class="bold px-3">Date of Birthday:</span><span class="mainDivTitle">13/March/1996</span></p>
+                <p><span class="bold px-3">Permanent Address:</span><span class="mainDivTitle">Damascus,Syria</span></p>
+                <p><span class="bold px-3">Nationality:</span><span class="mainDivTitle">Syrian</span></p>
+                <p><span class="bold px-3">Marital Status</span><span class="mainDivTitle">Single</span></p>
+                
+               </div>
+             </div>
+
+              <div class="mainDiv" id="education">
+              <div class="mainDivTitle">
+               <h1><span class="letter">E</span>ducation</h1>
+              </div>
+              <div class="mainDivContent">
+                <table class="table  ">
+                  <thead>
+                    <tr>
+                      <th scope="col">Certificate</th>
+                      <td scope="col"><mark>Faculty of Information Technology Engineering</mark></td>
+                    </tr>
+                  </thead>
+                  
+                  
+                  <tr>
+                    <th scope="col">Place of Study</th>
+                    <td scope="col"><mark>Damascus University</mark></td>
+                  </tr>
+                
+              </table>
+              
+                  
+              </div>
+              </div>
+              <div class="mainDiv" id="projects">
+                <div class="mainDivTitle">
+                 <h1><span class="letter">P</span>rojects</h1>
+                </div>
+                <div class="mainDivContent">
+                  <div class="slider1">
+                    <h4 id="projectheader" onmouseover="projectH1()"><span class="iconify" data-icon="clarity:asterisk-line" data-flip="vertical"></span>The First Project</h4> 
+                    <div id="alertt1" class="alert alert-dark alertt1" role="alert">
+                      This project is a restaurant website, through this website you can know the dishes available in this restaurant and know the offers. In addition you can ordering easily.
+             
+                    </div>
+                    <div id="carouselExampleIndicators" class="carousel slide my-4 firstSlider" data-ride="carousel" ">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="g10/img/pic1.PNG" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="g10/img/pic2.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="g10/img/pic3.png" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="g10/img/pic4.png" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="g10/img/pic5.png" alt="Third slide">
+                        </div><div class="carousel-item">
+                          <img class="d-block w-100" src="g10/img/pic6.png" alt="Third slide">
+                        </div><div class="carousel-item">
+                          <img class="d-block w-100" src="g10/img/pic7.png" alt="Third slide">
+                        </div><div class="carousel-item">
+                          <img class="d-block w-100" src="g10/img/pic8.png" alt="Third slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                 <!-- <div  class="more" onclick="c()"><span class="iconify" data-icon="ph:arrow-fat-down-bold"></span><span class="iconify" data-icon="ph:arrow-fat-down-bold"></span><span class="iconify" data-icon="ph:arrow-fat-down-bold"></span></div> -->
+                  <div class="slider2" >
+                    <h4 id="projectheader" onmouseover="projectH2()"><span class="iconify" data-icon="clarity:asterisk-line" data-flip="vertical"></span>The Second Project</h4> 
+                    <div id="alertt2" class="alert alert-dark alertt2" role="alert">
+                      This website belongs to a company, this company contains several section which know us what the company offer.
+                    </div>
+                    <div id="carouselExampleIndicators " class="carousel slide my-4 secondSlider" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="g10/img/pic11.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="g10/img/pic22.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="g10/img/pic33.png" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="g10/img/pic44.png" alt="Third slide">
+                        </div>
+                      
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div> 
+                  <div class="slider3" >
+                    <h4 id="projectheader" onmouseover="projectH3()"><span class="iconify" data-icon="clarity:asterisk-line" data-flip="vertical"></span>The Third Project</h4> 
+                    <div id="alertt3" class="alert alert-dark alertt3" role="alert">
+                      This is a blog website.
+                    </div>
+                    <div id="carouselExampleIndicators" class="carousel slide my-4 thirdSlider" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="g10/img/pic111.png" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="g10/img/pic222.png" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="g10/img/pic333.png" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="g10/img/pic444.png" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="g10/img/pic555.png" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="g10/img/pic666.png" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="g10/img/pic777.png" alt="Third slide">
+                      </div>
+                    
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+
+              
+            <div class=" mainDiv" id="knowledge">
+              <div class="mainDivTitle">
+               <h1><span class="letter">K</span>nowledge</h1>
+              </div>
+              <div class="mainDivContent mx-3">
+                <div class="ch"><span>Html</span>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 95%; background:#B93160;" >95%</div>
+                    </div>
+                </div><hr>
+
+                <div class="ch"><span>Css</span>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 95%; background:#B93160;" >95%</div>
+                    </div>
+                </div><hr>
+                <div class="ch"><span>JavaScript</span>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 70%; background:#B93160;" >70%</div>
+                    </div>
+                </div><hr>
+                <div class="ch"><span>Php</span>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 80%; background:#B93160;" >80%</div>
+                    </div>
+                </div><hr>
+                <div class="ch"><span>Dart</span>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 95%; background:#B93160;" >95%</div>
+                    </div>
+                </div><hr>
+                <div class="ch"><span>C</span>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 95%; background:#B93160;" >95%</div>
+                    </div>
+                </div><hr>
+                <div class="ch"><span>C++</span>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 95%; background:#B93160;" >95%</div>
+                    </div>
+                </div><hr>
+                <div class="ch"><span>Java</span>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 95%; background:#B93160;" >95%</div>
+                    </div>
+                </div><hr>
+                <div class="ch"><span>Laravel</span>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 70%; background:#B93160;" >70%</div>
+                    </div>
+                </div><hr>
+                <div class="ch"><span>Flutter</span>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 55%; background:#B93160;" >55%</div>
+                    </div>
+                </div><hr>
+                <div class="ch"><span>Bootstrap</span>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 80%; background:#B93160;" >80%</div>
+                    </div>
+                </div><hr>
+                <div class="ch"><span>Sql & MySql</span>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 90%; background:#B93160;" >90%</div>
+                    </div>
+                </div>
+                            
+
+              </div>
+            </div>
+
+            
+            <div class=" mainDiv " id="language">
+              <div class="mainDivTitle">
+               <h1><span class="letter">L</span>anguage</h1>
+              </div>
+              <div class="mainDivContent my-2">
+                <!--arabic-->
+               <p class="my-2"><span class="iconify" data-icon="emojione-monotone:eight-pointed-star" data-flip="horizontal"></span><span class="bold">Arabic</span><br>
+                <span class="mx-4"><span class="light">Reading:</span> 
+               <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span></span><br>
+                <span class="mx-4"><span class="light">Writing:</span>
+                  <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                  <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                  <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                  <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                  <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span></span><br>
+                  <span class="mx-4"><span class="light">Listening:</span>
+                    <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                    <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                    <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                    <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                    <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span></span><br>
+
+                    <span class="mx-4"><span class="light">Speaking:</span>
+                    <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                    <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                    <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                    <span class="iconify" data-icon="uis:star-half-alt"></span>
+                    <span class="iconify" data-icon="ri:star-line"></span></span>                    <!--english-->
+
+               <p><span class="iconify" data-icon="emojione-monotone:eight-pointed-star" data-flip="horizontal"></span><span class="bold">English</span><br>
+                <span class="mx-4"><span class="light">Reading:</span>
+                <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span></span><br>
+                <span class="mx-4"><span class="light">Writing:</span>
+                  <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                  <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                  <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                  <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                  <span class="iconify" data-icon="ri:star-line"></span></span><br>
+                  <span class="mx-4"><span class="light">Listening:</span>
+                    <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                    <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                    <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                    <span class="iconify" data-icon="uis:star-half-alt"></span>
+                    <span class="iconify" data-icon="ri:star-line"></span></span><br>
+                    <span class="mx-4"><span class="light">Speaking:</span>
+                    <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                    <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                    <span class="iconify" data-icon="ri:star-s-fill" data-flip="horizontal"></span>
+                    <span class="iconify" data-icon="uis:star-half-alt"></span>
+                    <span class="iconify" data-icon="ri:star-line"></span></span>
+
+              </div>
+            </div>
+
+            <div class=" mainDiv " id="interest">
+              <div class="mainDivTitle">
+               <h1><span class="letter">I</span>nterest</h1>
+              </div>
+              <div class="mainDivContent my-4">
+               <p> <span class="iconify mx-2" data-icon="twemoji:woman-swimming-medium-light-skin-tone" data-flip="horizontal"></span> Swimming</p>
+               <p> <span class="iconify mx-2" data-icon="flat-color-icons:reading"></span> Reading</p>
+               <p><span class="iconify mx-2" data-icon="noto:woman-running-light-skin-tone" data-flip="horizontal"></span>Walking</p>
+               <p><span class="iconify mx-2" data-icon="noto:shopping-bags" data-flip="horizontal"></span>Shopping</p>
+               <p><span class="iconify mx-2" data-icon="noto:airplane"></span>Traviling</p> 
+            </div>
+            </div>
+            </div>
+
+           
+        </div>
+    </div>
+    
+</div>
+
+
+
+<!--JS-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" 
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" 
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="g10/js/script.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+<script
+  type="text/javascript"
+  src="js/mdb.min.js"
+></script>
+
+
+</body>
+</html>
